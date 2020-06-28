@@ -8,7 +8,8 @@
   & .stats {
     display: flex;
     justify-content: space-between;
-    margin: 0 10rem;
+    width: 1300px;
+    margin: auto;
     color: orangered;
   }
   & .options {
@@ -26,6 +27,19 @@
       & div {
         text-align: center;
       }
+    }
+  }
+}
+@media only screen and (max-width: 1362px) {
+  .container .stats {
+    width: unset;
+    margin: 0 10rem;
+  }
+  @media only screen and (max-width: 770px) {
+    .container .stats {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
   }
 }
